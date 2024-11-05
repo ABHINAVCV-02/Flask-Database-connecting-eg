@@ -1,0 +1,42 @@
+Course Registration Application
+This is a simple web application built with Python's Flask framework and SQLite for handling a basic course registration system. The application allows users to register for courses by filling out a form and displays a list of registered participants on a separate page.
+
+Features
+Registration Form: Users can enter their full name, email, phone number, and select a course (options: Web Development, Data Science, Machine Learning).
+Database Storage: Stores registered user information using SQLite.
+Registered Participants Page: Displays a list of registered users on a separate page with an option to delete individual entries.
+Getting Started
+Prerequisites
+Python 3.x
+Flask (pip install flask)
+Flask-SQLAlchemy (pip install flask_sqlalchemy)
+Installation
+git clone https://github.com/your-username/course-registration-app.git
+cd course-registration-app
+Project Structure
+course-registration-app/
+├── app.py               # Main application file with Flask routes
+└── README.md            # Project README file
+
+Usage
+Visit http://127.0.0.1:5000/ to access the registration form.
+Fill out the form and submit it to register a new participant.
+To view registered participants, click the "View Registered Participants" link.
+The list of participants displays each user’s name, email, selected course, and phone number.
+Click "Delete" next to a participant's entry to remove them from the list.
+Routes
+/: Displays the course registration form.
+/registrations: Shows a list of registered participants.
+/delete/<id>: Deletes a specific registration.
+Code Overview
+app.py:
+Contains the main application logic.
+Defines the Registration database model with SQLAlchemy.
+Implements routes for rendering the registration form, viewing participants, and deleting entries.
+Example
+Register a participant on the main page.
+Navigate to the "View Registered Participants" page to see the participant listed.
+Delete any participant from the list as needed.
+License
+This project is licensed under the MIT License.
+
